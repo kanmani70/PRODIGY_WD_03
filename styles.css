@@ -1,0 +1,82 @@
+body {
+  background-color: #001f3f; /* Dark navy blue background */
+  color: #f0f0f0; /* Light gray text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: #003366; /* Slightly lighter navy blue */
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #ffcc00; /* Bright yellow color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#status {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #66ff66; /* Light green color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 0 auto; /* Center the board horizontally */
+  max-width: 330px; /* Ensure the board doesn’t stretch too wide */
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #004080; /* Darker blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  cursor: pointer;
+  color: #fff;
+  border: 3px solid #003366; /* Lighter blue border */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+  background-color: #00509e; /* Slightly lighter blue */
+  transform: scale(1.1);
+}
+
+button {
+  background-color: #007bff; /* Bright blue */
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #004085; /* Even darker blue */
+  transform: scale(1);
+}
